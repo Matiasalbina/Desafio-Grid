@@ -1,0 +1,100 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+nav {
+    grid-area: nav;
+    background-color: rgb(20, 106, 163);
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+}
+
+nav img {
+    width: 60px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #E7E7E7;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+}
+
+section {
+    grid-area: section;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    justify-items: center;
+    gap: 5px;
+    background-color: #E7E7E7;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #E6E8E7;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "aside section section section"
+    "footer footer footer footer";
+}
+
+aside ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color:rgb(255, 245, 245);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.card figure {
+    width: 100%;
+    height: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+.card h3 {
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card p {
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card button {
+    width: 100%;
+    background-color: rgb(20, 106, 163);
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: #E6E8E7;
+    color: white;
+}
+
+footer {
+    background-color: rgb(20, 106, 163);
+}
